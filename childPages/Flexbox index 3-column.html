@@ -12,14 +12,44 @@
     <meta name="keywords" content="Index, Flexbox">
     <meta name="viewport" content="width=device-width, inital-scale=1.0">
 
-    <style> div {border: thin dotted red} </style>
+    <style>
+      div {border: thin dotted red}
+      * {
+        box-sizing: border-box;
+      }
+      .header {
+        border: 1px solid red;
+      }
+      .menu {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .main {
+        width: 50%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .aside {
+        width: 25%;
+        float: left;
+        padding: 15px;
+        border: 1px solid red;
+      }
+      .footer {
+        border: 1px solid red;
+        padding: 15px;
+      }
+    </style>
 
   </head>
   <body>
-      <header><h1>INDEX File as Flexbox</h1></header>
-      <nav><h3>Navigation with no viewport in a h3-tag</h3></nav>
-      <aside><p>This is the aside space with no view port in a p-tag</p></aside>
-      <section> <h3 style="font-size:2.5vw">Section 1</h3>
+      <header class="header"><h1>INDEX File as Flexbox</h1></header>
+      <nav class="menu"><h3>Navigation with no viewport in a h3-tag</h3></nav>
+      <aside class="aside"><p>This is the aside space with no view port in a p-tag</p></aside>
+      <section class="main"> <h3 style="font-size:2.5vw">Section 1</h3>
         <article>
           <p style="font-size:1vw">Here are hyperlinks to the mandatory Experiments Pages</p>
           <!-- See the HTML .txt document for a summary-->
@@ -37,7 +67,7 @@
         </article>
       </section>
   </body>
-  <footer>
+  <footer class="footer">
     <blockquote cite="https://babytoboomer.com/2011/09/30/19-of-the-best-funny-and-silly-quotes-i-could-find-on-pinterest/"><!-- Date Accessed 20220208 --></blockquote>
     <p>
       <strong>The quickest way to double your money is to fold it over and put it back in your pocket.</strong>
